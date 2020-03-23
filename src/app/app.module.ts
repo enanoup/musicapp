@@ -2,13 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { PagesModule } from './pages/pages.module';
-import { AppRoutingModule } from './app-routing.module';
+
+import { APP_ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
 
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 
 @NgModule({
   declarations: [
@@ -19,8 +21,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    PagesModule
+    PagesModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]
