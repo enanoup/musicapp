@@ -1,0 +1,17 @@
+<h5> {{ leyenda }}</h5>
+
+<div class="input-group">
+    <span class="input-group-btn">
+      <button class="btn btn-primary" type="button" (click)="cambiarValor(-5)">
+          <i class="mdi mdi-minus"></i>
+      </button>
+    </span>
+
+        <input style="text-align: center;" type="text" class="form-control" [(ngModel)]="porcentaje" readonly="readonly">
+
+    <span class="input-group-btn">
+        <button class="btn btn-primary" type="button" (click)="cambiarValor(5)">
+            <i class="mdi mdi-plus"></i>
+        </button>
+    </span>
+</div>

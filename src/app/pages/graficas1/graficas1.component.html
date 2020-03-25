@@ -1,1 +1,13 @@
-<p>graficas1 works!</p>
+
+<div class="row">
+    <div class="col-6" *ngFor="let grafico of graficos">
+        <div class="card">
+            <div class="card-body">
+                
+                <h5 class="text-center"> <strong>{{ grafico.leyenda }}</strong> </h5>
+               <app-chart [labels]="grafico.labels" [data]="grafico.data" [type]="grafico.type"></app-chart>
+
+            </div>
+        </div>
+    </div>
+</div>
